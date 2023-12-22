@@ -42,8 +42,6 @@ func TestGetAPIKey(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			apiKey, err := GetAPIKey(tc.headers)
 
-            t.Error("Fail on purpose")
-
 			if tc.expectError && err == nil {
 				t.Errorf("expected an error but got none")
 			}
