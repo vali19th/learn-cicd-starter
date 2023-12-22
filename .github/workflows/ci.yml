@@ -20,4 +20,3 @@ jobs:
 
       - name: Print GO version
         run: go test ./...
-
