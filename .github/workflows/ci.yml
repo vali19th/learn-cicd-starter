@@ -20,3 +20,15 @@ jobs:
 
       - name: Run unit tests
         run: go test -cover ./...
+
+  style:
+    name: Formatting
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.20"
+
+      - name: Check formatting
+        run: test -z $(go fmt ./...)
+
