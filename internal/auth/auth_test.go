@@ -21,7 +21,7 @@ func TestGetAPIKey(t *testing.T) {
 			expectError:    false,
 		},
 		{
-			name: "no auth header",
+			name:    "no auth header",
 			headers: http.Header{
 				// No Authorization header
 			},
@@ -56,4 +56,3 @@ func TestGetAPIKey(t *testing.T) {
 		})
 	}
 }
-
